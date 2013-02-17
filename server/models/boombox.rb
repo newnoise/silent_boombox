@@ -28,7 +28,7 @@ class Song
   property :boombox_id,       Integer,    :required => true
 end
 
-DataMapper.setup(:default, 'mysql://rknLA@localhost/silent_boombox')
+DataMapper.setup(:default, 'mysql://rknLA:damnitkevin@localhost/silent_boombox')
 DataMapper.finalize
 DataMapper.auto_upgrade!
 

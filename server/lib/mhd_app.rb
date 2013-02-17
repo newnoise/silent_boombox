@@ -4,7 +4,7 @@ class MHDApp < Sinatra::Application
 
   def ensure_connections
     #DataMapper::Logger.new($stdout, :debug)
-    DataMapper.setup(:default, 'mysql://rknLA@localhost/silent_boombox')
+    DataMapper.setup(:default, 'mysql://rknLA:damnitkevin@localhost/silent_boombox')
   end
 
   before do
