@@ -9,15 +9,23 @@
 #import "RdioSilentBoomboxAppDelegate.h"
 #import <Rdio/Rdio.h>
 @interface RdioSilentBoomboxAppDelegate ()
-@property (nonatomic) Rdio* thisIsRdio;
+@property (nonatomic) Rdio* rdio;
 @end
 @implementation RdioSilentBoomboxAppDelegate
 
-@synthesize thisIsRdio = _thisIsRdio;
+@synthesize rdio = _rdio;
+
++ (Rdio*)rdioInstance
+{
+    return [(RdioSilentBoomboxAppDelegate*)[[UIApplication sharedApplication] delegate] rdio];
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    _rdio = [[Rdio alloc] initWithConsumerKey:@"8y8srnwxrygduabds79eyttm" andSecret:@"wznN2Qz6Je" delegate:nil];
+
     return YES;
 }
 							
@@ -41,8 +49,8 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    _thisIsRdio = [[Rdio alloc] initWithConsumerKey:@"8y8srnwxrygduabds79eyttm" andSecret:@"wznN2Qz6Je" delegate:nil];
-    [_thisIsRdio.player playSource:@"t24376590"];
+    //_rdio = [[Rdio alloc] initWithConsumerKey:@"8y8srnwxrygduabds79eyttm" andSecret:@"wznN2Qz6Je" delegate:nil];
+//    [_thisIsRdio.player playSource:@"t24376590"];
 
 }
 

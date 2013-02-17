@@ -28,6 +28,7 @@
 		EA4DFDEE16D08917008C9B7B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DFDED16D08917008C9B7B /* SystemConfiguration.framework */; };
 		EA4DFDF016D08924008C9B7B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DFDEF16D08924008C9B7B /* AudioToolbox.framework */; };
 		EA4DFDF216D0892D008C9B7B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DFDF116D0892D008C9B7B /* Security.framework */; };
+		EA4DFE0416D15C94008C9B7B /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DFE0316D15C94008C9B7B /* Settings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,8 @@
 		EA4DFDED16D08917008C9B7B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EA4DFDEF16D08924008C9B7B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		EA4DFDF116D0892D008C9B7B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EA4DFE0216D15C94008C9B7B /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		EA4DFE0316D15C94008C9B7B /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 		EA4DFDC116D08526008C9B7B /* RdioSilentBoombox */ = {
 			isa = PBXGroup;
 			children = (
+				EA4DFE0216D15C94008C9B7B /* Settings.h */,
+				EA4DFE0316D15C94008C9B7B /* Settings.m */,
 				EA4DFDCA16D08526008C9B7B /* RdioSilentBoomboxAppDelegate.h */,
 				EA4DFDCB16D08526008C9B7B /* RdioSilentBoomboxAppDelegate.m */,
 				EA4DFDD316D08526008C9B7B /* MainStoryboard.storyboard */,
@@ -219,6 +224,7 @@
 				EA4DFDCC16D08526008C9B7B /* RdioSilentBoomboxAppDelegate.m in Sources */,
 				EA4DFDD816D08526008C9B7B /* RdioSilentBoomboxFirstViewController.m in Sources */,
 				EA4DFDDF16D08526008C9B7B /* RdioSilentBoomboxSecondViewController.m in Sources */,
+				EA4DFE0416D15C94008C9B7B /* Settings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +357,7 @@
 				EA4DFDE816D08526008C9B7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

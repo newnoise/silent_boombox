@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol RdioDelegate, RDAPIRequestDelegate, RDPlayerDelegate;
 
-@interface RdioSilentBoomboxFirstViewController : UIViewController
+
+@interface RdioSilentBoomboxFirstViewController : UIViewController <RdioDelegate, RDAPIRequestDelegate, RDPlayerDelegate>
+
+@property (strong, nonatomic) IBOutlet UILabel *rdioLoginStatusLabel;
+@property (strong, nonatomic) IBOutlet UIButton *loginButtonProperty;
+
 
 @end
