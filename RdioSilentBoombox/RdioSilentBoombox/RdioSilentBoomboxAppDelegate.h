@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Rdio/Rdio.h>
 
 @interface RdioSilentBoomboxAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (readonly) Rdio *rdio;
+
++ (Rdio*)rdioInstance;
 
 @end
+
