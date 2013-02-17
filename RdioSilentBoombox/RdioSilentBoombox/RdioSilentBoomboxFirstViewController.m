@@ -9,11 +9,11 @@
 #import "RdioSilentBoomboxFirstViewController.h"
 #import "RdioSilentBoomboxAppDelegate.h"
 #import "Settings.h"
-#import <Rdio/Rdio.h>
 
 @interface RdioSilentBoomboxFirstViewController ()
 @property (nonatomic) BOOL userHasLoggedInToRdio;
-//@property (readonly) Rdio *
+@property (nonatomic) BOOL songIsPlaying;
+
 - (void)syncRdioButton;
 
 @end
@@ -25,11 +25,15 @@
 
 @synthesize userHasLoggedInToRdio  = _userHasLoggedInToRdio;
 @synthesize loginButtonProperty = _loginButtonProperty;
+@synthesize songIsPlaying = _songIsPlaying;
+
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    _songIsPlaying = NO;
     Rdio *sharedRdio = [RdioSilentBoomboxAppDelegate rdioInstance];
     [sharedRdio setDelegate:self];
     //[[sharedRdio player] setDelegate:self];
@@ -47,6 +51,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+// Loging to Rdio.
 - (IBAction)loginButton:(id)sender {
     NSLog(@"Test");
     NSLog(@"link to rdio pressed!");
@@ -54,6 +60,17 @@
         [[RdioSilentBoomboxAppDelegate rdioInstance] logout];
     } else {
         [[RdioSilentBoomboxAppDelegate rdioInstance] authorizeFromController:self];
+    }
+}
+
+// Plays a song...
+- (IBAction)playMeASongButton:(id)sender {
+    // Plays "Sinks With The Sun" by The Raveonettes.
+    if (_songIsPlaying == NO){
+        [[[RdioSilentBoomboxAppDelegate rdioInstance] player] playSource:@"t19153368"];
+        _songIsPlaying = YES;
+    } else if (_songIsPlaying){
+        [[[RdioSilentBoomboxAppDelegate rdioInstance] player] togglePause];
     }
 }
 

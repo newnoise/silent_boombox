@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Rdio/Rdio.h>
+
 @protocol RdioDelegate, RDAPIRequestDelegate, RDPlayerDelegate;
 
 

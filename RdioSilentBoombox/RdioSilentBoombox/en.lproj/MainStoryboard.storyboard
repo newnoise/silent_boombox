@@ -27,13 +27,16 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOa-An-APM">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Play Me A Song">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="playMeASongButton:" destination="2" eventType="touchUpInside" id="QcJ-bp-MMr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="User Not Logged In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9J-8H-xeT">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -134,6 +137,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RdioSilentBoomboxFirstViewController.h"/>
             <relationships>
                 <relationship kind="action" name="loginButton:"/>
+                <relationship kind="action" name="playMeASongButton:"/>
                 <relationship kind="outlet" name="loginButtonProperty" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="rdioLoginStatusLabel" candidateClass="UILabel"/>
             </relationships>
