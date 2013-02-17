@@ -13,6 +13,8 @@
 @interface RdioSilentBoomboxFirstViewController ()
 @property (nonatomic) BOOL userHasLoggedInToRdio;
 @property (nonatomic) BOOL songIsPlaying;
+@property (nonatomic) BOOL userIsDj;
+@property (nonatomic) BOOL userIsListener;
 
 - (void)syncRdioButton;
 
@@ -26,6 +28,8 @@
 @synthesize userHasLoggedInToRdio  = _userHasLoggedInToRdio;
 @synthesize loginButtonProperty = _loginButtonProperty;
 @synthesize songIsPlaying = _songIsPlaying;
+@synthesize userIsDj = _userIsDj;
+@synthesize userIsListener = _userIsListener;
 
 
 
@@ -34,6 +38,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     _songIsPlaying = NO;
+    _userIsDj = NO;
+    _userIsListener = NO;
     Rdio *sharedRdio = [RdioSilentBoomboxAppDelegate rdioInstance];
     [sharedRdio setDelegate:self];
     //[[sharedRdio player] setDelegate:self];
@@ -52,8 +58,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-// Loging to Rdio.
-- (IBAction)loginButton:(id)sender {
+- (IBAction)loginButtonPressed:(id)sender {
     NSLog(@"Test");
     NSLog(@"link to rdio pressed!");
     if (_userHasLoggedInToRdio) {
@@ -61,10 +66,10 @@
     } else {
         [[RdioSilentBoomboxAppDelegate rdioInstance] authorizeFromController:self];
     }
+
 }
 
-// Plays a song...
-- (IBAction)playMeASongButton:(id)sender {
+- (IBAction)playMeASongButtonPressed:(id)sender {
     // Plays "Sinks With The Sun" by The Raveonettes.
     if (_songIsPlaying == NO){
         [[[RdioSilentBoomboxAppDelegate rdioInstance] player] playSource:@"t19153368"];
@@ -72,6 +77,24 @@
     } else if (_songIsPlaying){
         [[[RdioSilentBoomboxAppDelegate rdioInstance] player] togglePause];
     }
+
+}
+
+- (IBAction)djButtonPressed:(id)sender {
+    if (_userIsDj == NO){
+        _userIsDj = YES;
+        _userIsListener = NO;
+    }
+    NSLog(@"DJ Button Pressed");
+}
+
+
+- (IBAction)listenerButtonPressed:(id)sender {
+    if (_userIsListener == NO){
+        _userIsListener = YES;
+        _userIsDj = NO;
+    }
+    NSLog(@"Listener Button Pressed");
 }
 
 - (void)syncRdioButton

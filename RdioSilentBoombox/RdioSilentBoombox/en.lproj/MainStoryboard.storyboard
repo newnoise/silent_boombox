@@ -22,7 +22,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginButton:" destination="2" eventType="touchUpInside" id="AeS-U8-QgR"/>
+                                    <action selector="loginButtonPressed:" destination="2" eventType="touchUpInside" id="E6a-wo-kNd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOa-An-APM">
@@ -35,7 +35,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="playMeASongButton:" destination="2" eventType="touchUpInside" id="QcJ-bp-MMr"/>
+                                    <action selector="playMeASongButtonPressed:" destination="2" eventType="touchUpInside" id="Sdj-Ck-fln"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="User Not Logged In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9J-8H-xeT">
@@ -43,17 +43,53 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuQ-UG-QxP">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="ThC-JE-YFd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="DJ">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="djButtonPressed:" destination="2" eventType="touchUpInside" id="g3t-WT-qdD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1j-zU-W4x">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="E4K-KV-c3Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Listener">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="listenerButtonPressed:" destination="2" eventType="touchUpInside" id="oWc-hq-gY1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="A9J-8H-xeT" firstAttribute="top" secondItem="gfl-jj-2i8" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="3oo-N2-gEB"/>
-                            <constraint firstItem="gfl-jj-2i8" firstAttribute="centerX" secondItem="A9J-8H-xeT" secondAttribute="centerX" type="default" id="95I-EK-E2H"/>
-                            <constraint firstItem="jOa-An-APM" firstAttribute="trailing" secondItem="gfl-jj-2i8" secondAttribute="trailing" type="default" id="HjN-S7-uFB"/>
+                            <constraint firstItem="A9J-8H-xeT" firstAttribute="centerX" secondItem="gfl-jj-2i8" secondAttribute="centerX" type="default" id="8rd-PX-g0q"/>
+                            <constraint firstItem="v1j-zU-W4x" firstAttribute="baseline" secondItem="yuQ-UG-QxP" secondAttribute="baseline" type="default" id="DY3-88-slZ"/>
                             <constraint firstItem="gfl-jj-2i8" firstAttribute="top" secondItem="16" secondAttribute="top" constant="140" id="M2Z-gp-pTh"/>
                             <constraint firstItem="gfl-jj-2i8" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="S4v-dZ-oK2"/>
                             <constraint firstAttribute="bottom" secondItem="jOa-An-APM" secondAttribute="bottom" constant="38" id="Ura-9J-vCh"/>
+                            <constraint firstItem="yuQ-UG-QxP" firstAttribute="top" secondItem="16" secondAttribute="top" constant="245" id="X4U-NE-Lue"/>
                             <constraint firstItem="A9J-8H-xeT" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Y45-qw-2VS"/>
                             <constraint firstAttribute="trailing" secondItem="A9J-8H-xeT" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="aT8-AX-1r3"/>
+                            <constraint firstItem="v1j-zU-W4x" firstAttribute="trailing" secondItem="jOa-An-APM" secondAttribute="trailing" type="default" id="c4P-jM-12n"/>
+                            <constraint firstItem="v1j-zU-W4x" firstAttribute="trailing" secondItem="gfl-jj-2i8" secondAttribute="trailing" type="default" id="fNe-kT-E3s"/>
+                            <constraint firstItem="yuQ-UG-QxP" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="j6E-5l-S17"/>
                             <constraint firstItem="jOa-An-APM" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="n9J-Kd-fnP"/>
                         </constraints>
                     </view>
@@ -136,8 +172,10 @@
         <class className="RdioSilentBoomboxFirstViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RdioSilentBoomboxFirstViewController.h"/>
             <relationships>
-                <relationship kind="action" name="loginButton:"/>
-                <relationship kind="action" name="playMeASongButton:"/>
+                <relationship kind="action" name="djButtonPressed:"/>
+                <relationship kind="action" name="listenerButtonPressed:"/>
+                <relationship kind="action" name="loginButtonPressed:"/>
+                <relationship kind="action" name="playMeASongButtonPressed:"/>
                 <relationship kind="outlet" name="loginButtonProperty" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="rdioLoginStatusLabel" candidateClass="UILabel"/>
             </relationships>
