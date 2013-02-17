@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA4DFDBC16D08526008C9B7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DFDBB16D08526008C9B7B /* UIKit.framework */; };
+		EA4DFDBE16D08526008C9B7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DFDBD16D08526008C9B7B /* Foundation.framework */; };
+		EA4DFDC016D08526008C9B7B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DFDBF16D08526008C9B7B /* CoreGraphics.framework */; };
+		EA4DFDC616D08526008C9B7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA4DFDC416D08526008C9B7B /* InfoPlist.strings */; };
+		EA4DFDC816D08526008C9B7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DFDC716D08526008C9B7B /* main.m */; };
+		EA4DFDCC16D08526008C9B7B /* RdioSilentBoomboxAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DFDCB16D08526008C9B7B /* RdioSilentBoomboxAppDelegate.m */; };
+		EA4DFDCE16D08526008C9B7B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4DFDCD16D08526008C9B7B /* Default.png */; };
+		EA4DFDD016D08526008C9B7B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4DFDCF16D08526008C9B7B /* Default@2x.png */; };
+		EA4DFDD216D08526008C9B7B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4DFDD116D08526008C9B7B /* Default-568h@2x.png */; };
+		EA4DFDD516D08526008C9B7B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4DFDD316D08526008C9B7B /* MainStoryboard.storyboard */; };
+		EA4DFDD816D08526008C9B7B /* RdioSilentBoomboxFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DFDD716D08526008C9B7B /* RdioSilentBoomboxFirstViewController.m */; };
+		EA4DFDDA16D08526008C9B7B /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4DFDD916D08526008C9B7B /* first.png */; };
+		EA4DFDDC16D08526008C9B7B /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4DFDDB16D08526008C9B7B /* first@2x.png */; };
+		EA4DFDDF16D08526008C9B7B /* RdioSilentBoomboxSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DFDDE16D08526008C9B7B /* RdioSilentBoomboxSecondViewController.m */; };
+		EA4DFDE116D08526008C9B7B /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4DFDE016D08526008C9B7B /* second.png */; };
+		EA4DFDE316D08526008C9B7B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4DFDE216D08526008C9B7B /* second@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA4DFDB816D08526008C9B7B /* RdioSilentBoombox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RdioSilentBoombox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA4DFDBB16D08526008C9B7B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA4DFDBD16D08526008C9B7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA4DFDBF16D08526008C9B7B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA4DFDC316D08526008C9B7B /* RdioSilentBoombox-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RdioSilentBoombox-Info.plist"; sourceTree = "<group>"; };
+		EA4DFDC516D08526008C9B7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA4DFDC716D08526008C9B7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA4DFDC916D08526008C9B7B /* RdioSilentBoombox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RdioSilentBoombox-Prefix.pch"; sourceTree = "<group>"; };
+		EA4DFDCA16D08526008C9B7B /* RdioSilentBoomboxAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RdioSilentBoomboxAppDelegate.h; sourceTree = "<group>"; };
+		EA4DFDCB16D08526008C9B7B /* RdioSilentBoomboxAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RdioSilentBoomboxAppDelegate.m; sourceTree = "<group>"; };
+		EA4DFDCD16D08526008C9B7B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EA4DFDCF16D08526008C9B7B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		EA4DFDD116D08526008C9B7B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EA4DFDD416D08526008C9B7B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EA4DFDD616D08526008C9B7B /* RdioSilentBoomboxFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RdioSilentBoomboxFirstViewController.h; sourceTree = "<group>"; };
+		EA4DFDD716D08526008C9B7B /* RdioSilentBoomboxFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RdioSilentBoomboxFirstViewController.m; sourceTree = "<group>"; };
+		EA4DFDD916D08526008C9B7B /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		EA4DFDDB16D08526008C9B7B /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		EA4DFDDD16D08526008C9B7B /* RdioSilentBoomboxSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RdioSilentBoomboxSecondViewController.h; sourceTree = "<group>"; };
+		EA4DFDDE16D08526008C9B7B /* RdioSilentBoomboxSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RdioSilentBoomboxSecondViewController.m; sourceTree = "<group>"; };
+		EA4DFDE016D08526008C9B7B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		EA4DFDE216D08526008C9B7B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA4DFDB516D08526008C9B7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4DFDBC16D08526008C9B7B /* UIKit.framework in Frameworks */,
+				EA4DFDBE16D08526008C9B7B /* Foundation.framework in Frameworks */,
+				EA4DFDC016D08526008C9B7B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA4DFDAF16D08526008C9B7B = {
+			isa = PBXGroup;
+			children = (
+				EA4DFDC116D08526008C9B7B /* RdioSilentBoombox */,
+				EA4DFDBA16D08526008C9B7B /* Frameworks */,
+				EA4DFDB916D08526008C9B7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA4DFDB916D08526008C9B7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA4DFDB816D08526008C9B7B /* RdioSilentBoombox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA4DFDBA16D08526008C9B7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA4DFDBB16D08526008C9B7B /* UIKit.framework */,
+				EA4DFDBD16D08526008C9B7B /* Foundation.framework */,
+				EA4DFDBF16D08526008C9B7B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA4DFDC116D08526008C9B7B /* RdioSilentBoombox */ = {
+			isa = PBXGroup;
+			children = (
+				EA4DFDCA16D08526008C9B7B /* RdioSilentBoomboxAppDelegate.h */,
+				EA4DFDCB16D08526008C9B7B /* RdioSilentBoomboxAppDelegate.m */,
+				EA4DFDD316D08526008C9B7B /* MainStoryboard.storyboard */,
+				EA4DFDD616D08526008C9B7B /* RdioSilentBoomboxFirstViewController.h */,
+				EA4DFDD716D08526008C9B7B /* RdioSilentBoomboxFirstViewController.m */,
+				EA4DFDD916D08526008C9B7B /* first.png */,
+				EA4DFDDB16D08526008C9B7B /* first@2x.png */,
+				EA4DFDDD16D08526008C9B7B /* RdioSilentBoomboxSecondViewController.h */,
+				EA4DFDDE16D08526008C9B7B /* RdioSilentBoomboxSecondViewController.m */,
+				EA4DFDE016D08526008C9B7B /* second.png */,
+				EA4DFDE216D08526008C9B7B /* second@2x.png */,
+				EA4DFDC216D08526008C9B7B /* Supporting Files */,
+			);
+			path = RdioSilentBoombox;
+			sourceTree = "<group>";
+		};
+		EA4DFDC216D08526008C9B7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA4DFDC316D08526008C9B7B /* RdioSilentBoombox-Info.plist */,
+				EA4DFDC416D08526008C9B7B /* InfoPlist.strings */,
+				EA4DFDC716D08526008C9B7B /* main.m */,
+				EA4DFDC916D08526008C9B7B /* RdioSilentBoombox-Prefix.pch */,
+				EA4DFDCD16D08526008C9B7B /* Default.png */,
+				EA4DFDCF16D08526008C9B7B /* Default@2x.png */,
+				EA4DFDD116D08526008C9B7B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA4DFDB716D08526008C9B7B /* RdioSilentBoombox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA4DFDE616D08526008C9B7B /* Build configuration list for PBXNativeTarget "RdioSilentBoombox" */;
+			buildPhases = (
+				EA4DFDB416D08526008C9B7B /* Sources */,
+				EA4DFDB516D08526008C9B7B /* Frameworks */,
+				EA4DFDB616D08526008C9B7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RdioSilentBoombox;
+			productName = RdioSilentBoombox;
+			productReference = EA4DFDB816D08526008C9B7B /* RdioSilentBoombox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA4DFDB016D08526008C9B7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RdioSilentBoombox;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Thomas Ituarte";
+			};
+			buildConfigurationList = EA4DFDB316D08526008C9B7B /* Build configuration list for PBXProject "RdioSilentBoombox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EA4DFDAF16D08526008C9B7B;
+			productRefGroup = EA4DFDB916D08526008C9B7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA4DFDB716D08526008C9B7B /* RdioSilentBoombox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA4DFDB616D08526008C9B7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4DFDC616D08526008C9B7B /* InfoPlist.strings in Resources */,
+				EA4DFDCE16D08526008C9B7B /* Default.png in Resources */,
+				EA4DFDD016D08526008C9B7B /* Default@2x.png in Resources */,
+				EA4DFDD216D08526008C9B7B /* Default-568h@2x.png in Resources */,
+				EA4DFDD516D08526008C9B7B /* MainStoryboard.storyboard in Resources */,
+				EA4DFDDA16D08526008C9B7B /* first.png in Resources */,
+				EA4DFDDC16D08526008C9B7B /* first@2x.png in Resources */,
+				EA4DFDE116D08526008C9B7B /* second.png in Resources */,
+				EA4DFDE316D08526008C9B7B /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA4DFDB416D08526008C9B7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4DFDC816D08526008C9B7B /* main.m in Sources */,
+				EA4DFDCC16D08526008C9B7B /* RdioSilentBoomboxAppDelegate.m in Sources */,
+				EA4DFDD816D08526008C9B7B /* RdioSilentBoomboxFirstViewController.m in Sources */,
+				EA4DFDDF16D08526008C9B7B /* RdioSilentBoomboxSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA4DFDC416D08526008C9B7B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA4DFDC516D08526008C9B7B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA4DFDD316D08526008C9B7B /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA4DFDD416D08526008C9B7B /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA4DFDE416D08526008C9B7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA4DFDE516D08526008C9B7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA4DFDE716D08526008C9B7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RdioSilentBoombox/RdioSilentBoombox-Prefix.pch";
+				INFOPLIST_FILE = "RdioSilentBoombox/RdioSilentBoombox-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EA4DFDE816D08526008C9B7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RdioSilentBoombox/RdioSilentBoombox-Prefix.pch";
+				INFOPLIST_FILE = "RdioSilentBoombox/RdioSilentBoombox-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA4DFDB316D08526008C9B7B /* Build configuration list for PBXProject "RdioSilentBoombox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA4DFDE416D08526008C9B7B /* Debug */,
+				EA4DFDE516D08526008C9B7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA4DFDE616D08526008C9B7B /* Build configuration list for PBXNativeTarget "RdioSilentBoombox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA4DFDE716D08526008C9B7B /* Debug */,
+				EA4DFDE816D08526008C9B7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA4DFDB016D08526008C9B7B /* Project object */;
+}
