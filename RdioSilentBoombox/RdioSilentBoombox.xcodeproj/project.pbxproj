@@ -23,6 +23,7 @@
 		EA4DFDDF16D08526008C9B7B /* RdioSilentBoomboxSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DFDDE16D08526008C9B7B /* RdioSilentBoomboxSecondViewController.m */; };
 		EA4DFDE116D08526008C9B7B /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4DFDE016D08526008C9B7B /* second.png */; };
 		EA4DFDE316D08526008C9B7B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4DFDE216D08526008C9B7B /* second@2x.png */; };
+		EA4DFDEA16D0874F008C9B7B /* Rdio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DFDE916D0874F008C9B7B /* Rdio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		EA4DFDDE16D08526008C9B7B /* RdioSilentBoomboxSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RdioSilentBoomboxSecondViewController.m; sourceTree = "<group>"; };
 		EA4DFDE016D08526008C9B7B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		EA4DFDE216D08526008C9B7B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		EA4DFDE916D0874F008C9B7B /* Rdio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Rdio.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				EA4DFDBC16D08526008C9B7B /* UIKit.framework in Frameworks */,
 				EA4DFDBE16D08526008C9B7B /* Foundation.framework in Frameworks */,
 				EA4DFDC016D08526008C9B7B /* CoreGraphics.framework in Frameworks */,
+				EA4DFDEA16D0874F008C9B7B /* Rdio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +87,7 @@
 		EA4DFDBA16D08526008C9B7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA4DFDE916D0874F008C9B7B /* Rdio.framework */,
 				EA4DFDBB16D08526008C9B7B /* UIKit.framework */,
 				EA4DFDBD16D08526008C9B7B /* Foundation.framework */,
 				EA4DFDBF16D08526008C9B7B /* CoreGraphics.framework */,
@@ -283,6 +287,10 @@
 		EA4DFDE716D08526008C9B7B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RdioSilentBoombox/RdioSilentBoombox-Prefix.pch";
 				INFOPLIST_FILE = "RdioSilentBoombox/RdioSilentBoombox-Info.plist";
@@ -294,6 +302,10 @@
 		EA4DFDE816D08526008C9B7B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RdioSilentBoombox/RdioSilentBoombox-Prefix.pch";
 				INFOPLIST_FILE = "RdioSilentBoombox/RdioSilentBoombox-Info.plist";
