@@ -8,5 +8,6 @@ SilentBoombox/SilentBoombox.xcodeproj/project.xcworkspace/xcuserdata/
 *.log
 *.swp
 *.tmp
+forcedWorkspace.*
 
 SilentBoombox/.DS_Store
