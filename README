@@ -1,7 +1,8 @@
 Rdio Silent Boombox Project, SF Music Hack Day 2013
 
 Updated version of Silent Boombox Project from SF Music Hack Day 2012. This version
-is intended to be used with the Rdio API and uses different 
+is intended to be used with the Rdio API and uses a different networking library
+for iOS integration with the Sinatra server.
 
 
 --------------------------------------------------------------------------------------------------------------------
